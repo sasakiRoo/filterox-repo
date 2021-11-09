@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Share Tech Mono
+- Font Author: Copyright (c) 2012, Carrois Type Design, Ralph du Carrois (www.carrois.com post@carrois.com), with Reserved Font Name 'Share'
+- Font Source: http://fonts.gstatic.com/s/sharetechmono/v10/J7aHnp1uDWRBEqV98dVQztYldFc7pAsEIc3Xew.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
