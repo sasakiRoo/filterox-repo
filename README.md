@@ -1,4 +1,4 @@
-link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 # filterox-repo
 filterox merupakan aplikasi web sederhana untuk menambahkan efek untuk foto yang Anda upload.
 untuk melakukan manipulasi atau tambahan efek, disini kita menggunakan HTML canvas dan library javascript <a href="http://camanjs.com/">camanJS</a>
