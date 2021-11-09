@@ -7,7 +7,7 @@ untuk ikon: <a href="https://boxicons.com/">box icon</a> <br>
 untuk font: <a href="https://fonts.google.com/">google fonts</a>
 
 
-### ⛓ Connect with me:
+### Connect with me:
 
 
 [<img align="left" alt="sasakiroo | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
@@ -16,7 +16,7 @@ untuk font: <a href="https://fonts.google.com/">google fonts</a>
 
 
 
-<br />
+<br>
 
 ❤ [donate]
 
