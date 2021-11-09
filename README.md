@@ -1,3 +1,4 @@
+link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 # filterox-repo
 filterox merupakan aplikasi web sederhana untuk menambahkan efek untuk foto yang Anda upload.
 untuk melakukan manipulasi atau tambahan efek, disini kita menggunakan HTML canvas dan library javascript <a href="http://camanjs.com/">camanJS</a>
@@ -14,8 +15,7 @@ untuk font: <a href="https://fonts.google.com/">google fonts</a>
 [<img align="left" alt="sasakiroo | Youtube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 [<img align="left" alt="sasakiroo | Tiktok" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/tiktok.svg" />][tiktok]
 
-<box-icon name='donate-heart' type='solid' ></box-icon>
-<br>
+<i class='bx bxs-donate-heart' ></i>
 
 ❤ [donate]
 
