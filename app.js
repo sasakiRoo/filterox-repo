@@ -1,30 +1,39 @@
-let uploadFile = document.querySelector('.uploadFile')
 const canvas = document.getElementById('canvas')
-const ctx = canvas.getContext('2d')
-const canvasWrapper = document.querySelector('.canvas-wrapper')
-const addBtn = document.querySelector('.add')
-const efButton = document.querySelectorAll('.ef-button')
-const efShow = document.querySelectorAll('.ef-show')
-const efMainBtn = document.querySelector('.ef-main-btn')
-const slider = document.querySelectorAll('.slider')
-let applyEf = document.querySelectorAll('.apply-effect')
-const boxConfi = document.querySelector('.box-confirmation')
-const efek = document.querySelectorAll('.efek')
-const resetb = document.querySelector('.reset')
-const removeImg = document.querySelector('.remove-img')
+			ctx = canvas.getContext('2d')
+			canvasWrapper = document.querySelector('.canvas-wrapper')
+			addBtn = document.querySelector('.add')
+			efButton = document.querySelectorAll('.ef-button')
+			efShow = document.querySelectorAll('.ef-show')
+			efMainBtn = document.querySelector('.ef-main-btn')
+			slider = document.querySelectorAll('.slider')
+			boxConfi = document.querySelector('.box-confirmation')
+			efek = document.querySelectorAll('.efek')
+			resetb = document.querySelector('.reset')
+			removeImg = document.querySelector('.remove-img')
+			info = document.querySelector('.a-in-wrapper')
+			sun = document.querySelector('.bx-sun')
+			moon = document.querySelector('.bxs-moon')
+			modeActivate = document.querySelectorAll('.mode-activate')
+			efWrapper = document.querySelector('.effect-wrapper')
+			container = document.querySelector('.container')
+			efwBtn = document.querySelectorAll('.ef-child button')
+			bottomBtn = document.querySelectorAll('.d-add-reset-wrapper button')
+			sliderPopUp = document.querySelector('.slider-pop-up')
+			dld = document.querySelector('.download')
+			i = document.querySelector('.info')
+			appI = document.querySelector('.app-info')
+			infoLink = document.querySelectorAll('.body-info a')
+let uploadFile = document.querySelector('.uploadFile')
 let image = document.querySelector('.image')
-const sliderPopUp = document.querySelector('.slider-pop-up')
-const dld = document.querySelector('.download')
-const i = document.querySelector('.info')
-const appI = document.querySelector('.app-info')
-
+let applyEf = document.querySelectorAll('.apply-effect')
 let fileName
-let Edited
+resetb.style.display = 'none'
+
 function upload(){
 	uploadFile.click()
 }
-console.log(efShow)
-resetb.style.display = 'none'
+
+
 i.addEventListener('click', ()=>{
 	appI.style.display = 'flex'
 	const x = document.querySelector('.a-in-wrapper .bxs-x-circle')
@@ -33,6 +42,7 @@ i.addEventListener('click', ()=>{
 		appI.style.display = 'none'
 	})
 })
+
 efMainBtn.addEventListener('click', () => {
 	if (image.getAttribute('src') == ''){
 		alert('masukan gambar dulu bos!')
@@ -157,20 +167,18 @@ uploadFile.addEventListener('change', () => {
 			image.src = reader.result
 			image.style.display = 'none'
 			canvas.style.display = 'block'
-			canvasWrapper.style.border = 'none'
+			
 			
 			// image.style.objectFit = 'contain'
 			image.onload =  function(){
         editImage()
+        
 				canvas.width = image.width
 				canvas.height = image.height
 				drawImageScaled(image, ctx)
 				canvas.removeAttribute('data-caman-id')
 			}
 		}, false)
-if (Edited == false) {
-	Edited = true;
-  }
 })
 
 
@@ -250,17 +258,11 @@ removeImg.addEventListener('click', ()=> {
 	image.style.display ='none'
 	canvas.style.display = 'none'
 	canvasWrapper.style.border = ''
-  
+	removeImg.style.display = 'none'
   resetEffects()
 })
 
-const sun = document.querySelector('.bx-sun')
-const moon = document.querySelector('.bxs-moon')
-const modeActivate = document.querySelectorAll('.mode-activate')
-const efWrapper = document.querySelector('.effect-wrapper')
-const container = document.querySelector('.container')
-const efwBtn = document.querySelectorAll('.ef-child button')
-const bottomBtn = document.querySelectorAll('.d-add-reset-wrapper button')
+
 function modeLight(){
 	
 	const neuMorphism	= {
@@ -271,6 +273,23 @@ function modeLight(){
 	            	'inset -20px -20px 60px #ffffff'
             	]
 	}
+
+	const neuMorphism2 = {
+		borderRadius: '15px',
+		background: 'linear-gradient(145deg, #f0f0f0, #cacaca)',
+		boxShadow: [ '17px 17px 50px #8b8b8b',
+             			'-7px -7px 50px #ffffff'
+             		]
+	}
+	info.style.color = 'black'
+	
+	infoLink.forEach(e => e.style.color = 'blue')
+	info.style.borderRadius = neuMorphism2.borderRadius
+	info.style.background = neuMorphism2.background
+	for (let i = 0; i < neuMorphism2.boxShadow.length; i++){
+		info.style.boxShadow = neuMorphism2.boxShadow[i]
+	}
+	
 	container.style.backgroundColor = '#e0e0e0'
 	efwBtn.forEach(e => {
 		e.style.background = 'linear-gradient(145deg, #7377e6, #898dff)'
@@ -279,9 +298,10 @@ function modeLight(){
 		e.style.background = 'linear-gradient(145deg, #7377e6, #898dff)'
 	})
 	
-	canvasWrapper.style.border = '2px dashed black'
+	canvasWrapper.style.border = '2px dashed #898dff'
 	efWrapper.style.borderRadius = neuMorphism.borderRadius 
 	efWrapper.style.background = neuMorphism.background
+
 	for (let i = 0; i < neuMorphism.boxShadow.length; i++){
 		efWrapper.style.boxShadow = neuMorphism.boxShadow[i]
 	}
@@ -289,15 +309,23 @@ function modeLight(){
 }
 
 function modeDark(){
+
 	container.style.backgroundColor = ''
 	canvasWrapper.style.border = ''
 	container.style.transition = '1s ease-in'
+	info.style.color = ''
+	infoLink.forEach(e => e.style.color = '')
+	info.style.borderRadius = ''
+	info.style.background = ''
+	info.style.boxShadow = ''
+	
 	efwBtn.forEach(e => {
 		e.style.background = ''
 	})
 	bottomBtn.forEach(e => {
 		e.style.background = ''
 	})
+
 	efWrapper.style.borderRadius =''
 	efWrapper.style.background = ''
 	efWrapper.style.boxShadow = ''
@@ -337,6 +365,7 @@ dld.addEventListener('click', e => {
 	download(canvas, newFileName)
 
 })
+
 function download(canvas, fileName){
 
 	let e
