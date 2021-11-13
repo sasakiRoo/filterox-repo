@@ -30,8 +30,9 @@
 	overflow: hidden;
 	font-family: 'Share Tech Mono', monospace;
 }
-.logo-name{
+.logo-name h3{
 	font-size: 2.1em;
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
 .box-confirmation{
@@ -191,12 +192,12 @@ background: #C5AEFF;
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .slider::-webkit-slider-thumb {
 	border-radius: 50%;
-	box-shadow: 5px 1px 10px rgb(0, 0, 0);
+	box-shadow: 5px 1px 8px rgba(0, 0, 0, 0.3);
   -webkit-appearance: none; /* Override default look */
   appearance: none;
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
-  background: #FFFD7E; /* Green background */
+  background: #FFFD7E;
   cursor: pointer; /* Cursor on hover */
 }
 
