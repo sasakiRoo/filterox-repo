@@ -449,6 +449,7 @@ terima kasih untuk / thanks to:
 * Acode <<android text editor>>
 * WEB PROGRAMMING UNPAS: https://www.youtube.com/c/WebProgrammingUNPAS/playlists
 * GITHUB: github.com
+* FIGMA: figma.com
 > my github: https://github.com/sasakiRoo
 
 */
