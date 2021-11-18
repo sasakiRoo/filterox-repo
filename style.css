@@ -176,8 +176,8 @@
   width: 100%; /* Full-width */
   height: 25px; /* Specified height */
 
- border-radius: 50px;
-background: #C5AEFF;
+ 	border-radius: 50px;
+	background: #C5AEFF;
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
@@ -258,7 +258,7 @@ section{
 ::-webkit-scrollbar {
   height: 4px;
   width: 0;
-  display: none;
+  /*display: none;*/
 }
 
 /* Track */
@@ -269,7 +269,7 @@ section{
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background:#5552a5; 
-  border-radius: 1px;
+  border-radius: 5px;
 }
 .effect-wrapper{
 	border-radius: 12px;
