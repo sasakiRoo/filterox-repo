@@ -4,8 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-		<link rel="stylesheet" href="style.css">
-		<script defer src="app.js"></script>
+		<link rel="stylesheet" href="lp.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -16,85 +15,11 @@
 		<title>filterox</title>
 	</head>
 	<body>
-		<div class="container">
-			<section class="nav-wrapper">
-				<nav>
-					<div class="logo-name"><h3>Filterox</h3></div>
-				</nav>
-				<div class="mode">
-					<i class='bx bx-sun mode-activate'></i>
-					<i class='bx bxs-moon mode-activate' ></i>
-				</div>
-			</section>
-			<section class="canvas-wrapper">
-				<div class="remove-img">
-					<i class='bx bxs-x-circle'></i>
-				</div>
-				<img src="" class="image">
-				<canvas id="canvas"></canvas>
-				<div class="slider-pop-up">
-					<div class="x1 slider-name">blur</div>
-					<div class="x2 percentage">100%</div>
-				</div>
-			</section>
-			<section class="slider-wrapper">
-				<div class="sl-wrapper-child">
-					<div class="efek ef-brightness">
-						<input type="range" class="slider apply-effect" id="br" min="-100" max="100" value="0" class="c">
-					</div>
-					<div class="efek ef-blur">
-						<input type="range" class="slider apply-effect" id="bl" min="0" max="20" value="0" class="c">
-					</div>
-					<div class="efek ef-saturation">
-						<input type="range" class="slider apply-effect" id="st" min="-100" max="100" value="0" class="c">
-					</div>
-					<div class="efek ef-exposure">
-						<input type="range" class="slider apply-effect" id="ex" min="-100" max="100" value="0" class="c">
-					</div>
-					<div class="efek ef-hue">
-						<input type="range" class="slider apply-effect" id="hue" min="0" max="100" value="0" class="c">
-					</div>
-				</div>
-			</section>
-			<section class="effect-wrapper">
-				<div class="left-child ef-child">
-					<button class="ef-button ef-show"><i class='bx bx-brightness-half'></i></button>
-					<button class="ef-button ef-show"><i class='bx bxs-brush-alt' ></i></button>
-					<button class="ef-button ef-show"><i class='bx bxs-adjust' ></i></button>
-					<button class="ef-button ef-show"><i class='bx bx-bulb'></i></button>
-					<button class="ef-button ef-show"><i class='bx bxs-tone'></i></button>
-				</div>
-				<div class="center-child ef-child">
-					<button class="ef-main-btn"><i class='bx bx-slider' ></i></button>
-				</div>
-				<div class="right-child ef-child">
-					<button class="ef-right-btn ef-show apply-effect vtg">vintage</button>
-					<button class="ef-right-btn ef-show apply-effect sp">sepia</button>
-					<button class="ef-right-btn ef-show apply-effect lm">lomo</button>
-					<button class="ef-right-btn ef-show apply-effect cl">clarity</button>
-					<button class="ef-right-btn ef-show apply-effect sn">sunrise</button>
-				</div>
-			</section>
-			<section class="d-add-reset-wrapper">
-				<button class="download"><i class='bx bxs-down-arrow-circle'></i></button>
-				<button class="add" onclick="upload()">
-				<i class='bx bx-plus-circle'></i>
-				<input type="file" class="uploadFile">
-				</button>
-				<button class="reset"><i class='bx bx-reset' ></i></button>
-				<button class="info"><i class='bx bxs-info-circle' ></i></button>
-			</section>
-			<div class="box-confirmation">
-				<div class="reset-image-pop-up">
-					<span class="title">ingin menghapus efek?</span>
-					<div class="reset-image-pop-up-child-btn">
-						<button class="yes">ya</button>
-						<button class="no">tidak</button>
-					</div>
-				</div>
-			</div>
-			
-			<div class="app-info">
+		<div class="container" style="overflow: hidden;">
+		<section class="logo">Filterox</section>
+		<section class="content" style="width: 80%; border: none;">
+		  <div class="img-box" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+		    	  <img src="img/ast.jpg" alt="gambar" width="200px">
 <script type="text/javascript">
 	atOptions = {
 		'key' : 'd841952c29aa121f9e3dbc00739be21c',
@@ -105,33 +30,17 @@
 	};
 	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.variousformatscontent.com/d841952c29aa121f9e3dbc00739be21c/invoke.js"></scr' + 'ipt>');
 </script>
-				<div class="a-in-wrapper">
-					<div class="head-info">
-						<div class="app-name">filterox by sasakiroo</div>
-					</div>
-					<div class="body-info">
-						filterox merupakan aplikasi web sederhana untuk menambahkan efek untuk foto yang Anda upload.
-						untuk melakukan manipulasi atau menambahkan efek, project ini menggunakan HTML canvas dan library javascript <a href="http://camanjs.com/">camanJS</a>
-						dan assets untuk website ini menggunakan:
-						<br>
-						untuk ikon: <a href="https://boxicons.com/">box icon</a> <br>
-						untuk font: <a href="https://fonts.google.com/">google fonts</a>
-					</div>
-					<div class="footer-info">
-						<nav class="socialMedia">
-							<a href="https://github.com/sasakiroo" target="_blank"><i class='bx bxl-github'></i></a>
-							<a href="https://instagram.com/sasakiroo___" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-						</nav>
-					</div>
-					<i class='bx bxs-x-circle'></i>
-				</div>
-			</div>
+		  </div>
+	
+			<h1 class="title x ml3">Editor Foto Sederhana</h1>
+			<p>Selamat datang di Filterox. Dimana di aplikasi ini memungkinkan Anda untuk mengubah atau mempercantik foto yang akan Anda upload.</p>
+			<div class="ctaa"><a href="main.html"><i class='bx bx-pencil'></i> Edit Foto</a></div>
+		</section>
+		<div class="box">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FF4949" fill-opacity="0.4" d="M0,288L80,277.3C160,267,320,245,480,224C640,203,800,181,960,176C1120,171,1280,181,1360,186.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>		
 		</div>
-		<script type="text/javascript" src="caman.full.min.js"></script>
-		
 
-
-
-		
-	</body>
+	</div>
+	
+</body>
 </html>

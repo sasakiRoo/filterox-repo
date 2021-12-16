@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="stylesheet" href="style.css">
+		<script defer src="app.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+		<link rel="apple-touch-icon" sizes="180x180" href="/favico/apple-touch-icon.png.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favico/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favico/favicon-32x32.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<title>filterox</title>
+	</head>
+	<body>
+		<div class="container">
+			<section class="nav-wrapper">
+				<nav>
+					<div class="logo-name"><h3>Filterox</h3></div>
+				</nav>
+				<div class="mode">
+					<i class='bx bx-sun mode-activate'></i>
+					<i class='bx bxs-moon mode-activate' ></i>
+				</div>
+			</section>
+			<section class="canvas-wrapper">
+				<div class="remove-img">
+					<i class='bx bxs-x-circle'></i>
+				</div>
+				<img src="" class="image">
+				<canvas id="canvas"></canvas>
+				<div class="slider-pop-up">
+					<div class="x1 slider-name">blur</div>
+					<div class="x2 percentage">100%</div>
+				</div>
+			</section>
+			<section class="slider-wrapper">
+				<div class="sl-wrapper-child">
+					<div class="efek ef-brightness">
+						<input type="range" class="slider apply-effect" id="br" min="-100" max="100" value="0" class="c">
+					</div>
+					<div class="efek ef-blur">
+						<input type="range" class="slider apply-effect" id="bl" min="0" max="20" value="0" class="c">
+					</div>
+					<div class="efek ef-saturation">
+						<input type="range" class="slider apply-effect" id="st" min="-100" max="100" value="0" class="c">
+					</div>
+					<div class="efek ef-exposure">
+						<input type="range" class="slider apply-effect" id="ex" min="-100" max="100" value="0" class="c">
+					</div>
+					<div class="efek ef-hue">
+						<input type="range" class="slider apply-effect" id="hue" min="0" max="100" value="0" class="c">
+					</div>
+				</div>
+			</section>
+			<section class="effect-wrapper">
+				<div class="left-child ef-child">
+					<button class="ef-button ef-show"><i class='bx bx-brightness-half'></i></button>
+					<button class="ef-button ef-show"><i class='bx bxs-brush-alt' ></i></button>
+					<button class="ef-button ef-show"><i class='bx bxs-adjust' ></i></button>
+					<button class="ef-button ef-show"><i class='bx bx-bulb'></i></button>
+					<button class="ef-button ef-show"><i class='bx bxs-tone'></i></button>
+				</div>
+				<div class="center-child ef-child">
+					<button class="ef-main-btn"><i class='bx bx-slider' ></i></button>
+				</div>
+				<div class="right-child ef-child">
+					<button class="ef-right-btn ef-show apply-effect vtg">vintage</button>
+					<button class="ef-right-btn ef-show apply-effect sp">sepia</button>
+					<button class="ef-right-btn ef-show apply-effect lm">lomo</button>
+					<button class="ef-right-btn ef-show apply-effect cl">clarity</button>
+					<button class="ef-right-btn ef-show apply-effect sn">sunrise</button>
+				</div>
+			</section>
+			<section class="d-add-reset-wrapper">
+				<button class="download"><i class='bx bxs-down-arrow-circle'></i></button>
+				<button class="add" onclick="upload()">
+				<i class='bx bx-plus-circle'></i>
+				<input type="file" class="uploadFile">
+				</button>
+				<button class="reset"><i class='bx bx-reset' ></i></button>
+				<button class="info"><i class='bx bxs-info-circle' ></i></button>
+			</section>
+			<div class="box-confirmation">
+				<div class="reset-image-pop-up">
+					<span class="title">ingin menghapus efek?</span>
+					<div class="reset-image-pop-up-child-btn">
+						<button class="yes">ya</button>
+						<button class="no">tidak</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="app-info">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd841952c29aa121f9e3dbc00739be21c',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.variousformatscontent.com/d841952c29aa121f9e3dbc00739be21c/invoke.js"></scr' + 'ipt>');
+</script>
+				<div class="a-in-wrapper">
+					<div class="head-info">
+						<div class="app-name">filterox by sasakiroo</div>
+					</div>
+					<div class="body-info">
+						filterox merupakan aplikasi web sederhana untuk menambahkan efek untuk foto yang Anda upload.
+						untuk melakukan manipulasi atau menambahkan efek, project ini menggunakan HTML canvas dan library javascript <a href="http://camanjs.com/">camanJS</a>
+						dan assets untuk website ini menggunakan:
+						<br>
+						untuk ikon: <a href="https://boxicons.com/">box icon</a> <br>
+						untuk font: <a href="https://fonts.google.com/">google fonts</a>
+					</div>
+					<div class="footer-info">
+						<nav class="socialMedia">
+							<a href="https://github.com/sasakiroo" target="_blank"><i class='bx bxl-github'></i></a>
+							<a href="https://instagram.com/sasakiroo___" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+						</nav>
+					</div>
+					<i class='bx bxs-x-circle'></i>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="caman.full.min.js"></script>
+	</body>
+</html>
