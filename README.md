@@ -1,6 +1,6 @@
 # filterox
 🇬🇧
-filterix is an online photo editor to add an effect to your photo.
+filterox is an online photo editor to add an effect to your photo.
 <br>
 🇮🇩
 filterox merupakan aplikasi web sederhana untuk menambahkan efek untuk foto yang Anda upload.
@@ -18,13 +18,15 @@ untuk font: <a href="https://fonts.google.com/">google fonts</a>
 [<img align="left" alt="sasakiroo | Youtube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 [<img align="left" alt="sasakiroo | Tiktok" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/tiktok.svg" />][tiktok]
 
+### Donate - Donasi
+🇮🇩 [donate-id]
+<br>
+🌐 [donate-ww]
 
-🎁 [donate]
 
 
-
-
-[donate]: https://saweria.co/sasakiroo
+[donate-id]: https://saweria.co/sasakiroo
+[donate-ww]: https://paypal.me/sasakiroo
 [youtube]: https://www.youtube.com/channel/UCze-cYXPTvZtiKSaJ0BR5Yg
 [instagram]: https://instagram.com/sasakiroo___
 [tiktok]: tiktok.com/@boringcodes
