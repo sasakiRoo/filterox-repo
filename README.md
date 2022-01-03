@@ -1,6 +1,7 @@
 # filterox
 🇬🇧
 filterix is an online photo editor to add an effect to your photo.
+<br>
 🇮🇩
 filterox merupakan aplikasi web sederhana untuk menambahkan efek untuk foto yang Anda upload.
 untuk melakukan manipulasi atau tambahan efek, disini kita menggunakan HTML canvas dan library javascript <a href="http://camanjs.com/">camanJS</a>
