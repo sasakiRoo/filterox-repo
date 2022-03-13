@@ -27,7 +27,7 @@ untuk font: <a href="https://fonts.google.com/">google fonts</a>
 
 ### project been reviewed
 
-[reviewed]
+https://youtu.be/_avQ5YRO_KA
 
 Timestamp:46:37
 
@@ -36,4 +36,3 @@ Timestamp:46:37
 [youtube]: https://www.youtube.com/channel/UCze-cYXPTvZtiKSaJ0BR5Yg
 [instagram]: https://instagram.com/sasakiroo___
 [tiktok]: tiktok.com/@boringcodes
-[reviewed] : https://youtu.be/_avQ5YRO_KA
