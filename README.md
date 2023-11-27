@@ -13,16 +13,9 @@ untuk font: <a href="https://fonts.google.com/">google fonts</a>
 
 ### Connect with me:
 
-
-[<img align="left" alt="sasakiroo | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 [<img align="left" alt="sasakiroo | Youtube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 [<img align="left" alt="sasakiroo | Tiktok" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/tiktok.svg" />][tiktok]
 
-<br><br>
-### Donate - Donasi:
-🇮🇩 [donasi]
-<br>
-🌐 [donate]
 
 
 ### project been reviewed
@@ -31,8 +24,5 @@ https://youtu.be/_avQ5YRO_KA
 
 Timestamp:46:37
 
-[donasi]: https://saweria.co/sasakiroo
-[donate]: https://paypal.me/sasakiroo
 [youtube]: https://www.youtube.com/channel/UCze-cYXPTvZtiKSaJ0BR5Yg
-[instagram]: https://instagram.com/sasakiroo___
 [tiktok]: tiktok.com/@boringcodes
